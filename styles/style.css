@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -9,12 +10,15 @@ body {
     height: 100vh;
 }
 
-navbar {
+header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-right: 20px;
     max-height: 64px;
-    max-width: 1512px;
+    max-width: 1920px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 ul {
@@ -36,4 +40,94 @@ ul li a img {
     font-size: 14px;
 }
 
+.searchDiv {
+  display: flex;
+  margin: 0 20px;
+  border-radius: 8px;
+  position: absolute;
+  left: 150px;
+}
 
+.search-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 38px;
+}
+
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0 8px;
+  border-right: 1px solid #ccc;
+}
+
+.input-with-icon .icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 6px;
+}
+
+.input-with-icon input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 160px;
+}
+
+.location-input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 150px;
+}
+
+.search-button {
+  background-color: #f65858;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.search-button img {
+  height: 42px;
+  width: 42px;
+}
+
+.joinMeetUp {
+  max-width: 1196px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 0 32px;
+}
+
+.textDiv h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.textDiv p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 480px;
+}
+
+.textDiv button {
+  background-color: #00798a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
