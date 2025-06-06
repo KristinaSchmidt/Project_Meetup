@@ -9,6 +9,7 @@ body {
     min-height: 100vh;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -103,7 +104,6 @@ ul li a img {
 
 
 
-
 .joinMeetUp {
   max-width: 1196px;
   margin: 60px auto;
@@ -142,8 +142,6 @@ ul li a img {
 
 
 
-
-
 .event-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -170,6 +168,7 @@ ul li a img {
   max-width: 1196px;
   margin: 0 auto;
   padding: 0 32px;
+  margin-bottom: 100px;
 }
 
 
@@ -253,6 +252,327 @@ ul li a img {
 
 .info-row span + img {
   margin-left: 10px;
+}
+
+
+
+
+
+
+.onlineEvents {
+  max-width: 1196px;
+  margin: 0 auto;
+  padding: 0 32px;
+  margin-bottom: 100px;
+}
+
+.onlineEvent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.onlineEvents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.onlineEvent {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.signUp {
+  max-width: 1196px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-bottom: 100px;
+  background-color: #eef9fb;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 120px;
+}
+
+.joinContent {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.signUp-btn {
+  background-color: #f65858;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 16px;
+}
+
+.signUp-btn:hover {
+  background-color: #d64545;
+}
+
+.joinContent h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.joinContent p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+
+
+
+
+
+.exploreCategories {
+  max-width: 1196px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+
+
+.group-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.group {
+  background-color: #eef9fb;
+  padding: 24px 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 135px;
+  height: 112px;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.category img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 8px;
+}
+
+
+
+.exploreCategories h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.category span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+}
+
+
+
+
+
+
+
+
+
+
+.popularCities {
+  max-width: 1196px;
+  margin: 0 auto 100px;
+  padding: 0px;
+}
+
+.popularCities h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.popularCities .subtitle {
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 24px;
+  text-align: center;
+}
+
+.city img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 205px;
+  height: 205px;
+}
+
+.city p {
+  margin-top: 8px;
+  
+}
+
+
+
+
+
+
+
+.howMeetupWorks {
+  max-width: 1196px;
+  margin: 0 auto 80px;
+  padding: 0px;
+}
+
+.howMeetupWorks h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.how-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.how-box {
+  background-color: #f0f9f9;
+  border-radius: 12px;
+  padding: 30px;
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.how-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.how-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.how-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.how-text p {
+  font-size: 16px;
+  color: #111;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.how-text a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #00798a;
+  text-decoration: none;
+}
+
+.how-text a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.friendshipSection {
+  max-width: 1196px;
+  margin: 0 auto 100px;
+  padding: 0px;
+}
+
+.friendshipSection h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.friendshipSection .subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.friendship-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.friend-card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.friend-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.friend-card p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.friend-card a {
+  font-size: 14px;
+  color: #00798a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.friend-card a:hover {
+  text-decoration: underline;
 }
 
 
