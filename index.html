@@ -21,7 +21,7 @@
                         <img src="img/Vector(5).png" alt="Suche" class="icon" />
                         <input type="search" placeholder="Search events" />
                     </div>
-                        <input type="text" placeholder="Mountain View, CA" class="location-input" />
+                        <input id="location-ca" type="text" placeholder="Mountain View, CA" class="location-input" />
                         <button class="search-button">
                         <img src="img/Button - Search events(1).png" alt="Suchen" />
                         </button>
@@ -34,6 +34,7 @@
             <li><a href="#"><img src="img/Link.png" alt="Link"></a></li>
         </ul>
         </header>
+        
 <!-- Main -->
         <main>
             <div class="joinMeetUp">
@@ -42,7 +43,7 @@
                 <p>Whatever your interest, from hiking and reading to networking and skill sharing, 
                     there are thousands of people who share it on Meetup. 
                     Events are happening every day—sign up to join the fun.</p> 
-                <button type="onclick">Join Meetup</button>
+                <button id="join-meetup-btn">Join Meetup</button>
                 </div>
 
                 <div class="imgDiv">
@@ -324,8 +325,7 @@
 
         </section>
 
-
-
+<!-- Section signUp -->
         <section class="signUp">
           <div class="joinContent">
             <h2>Join Meetup</h2>
@@ -342,7 +342,7 @@
         </section>
 
 
-
+<!-- Section exploreCategories -->
         <section class="exploreCategories">
             <h2>Explore top categories</h2>
             <div class="group-grid">
@@ -390,13 +390,7 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
+ <!-- Section popularCities -->
     <section class="popularCities">
         <h2>Popular cities on Meetup</h2>
         <p class="subtitle">Looking for fun things to do near you? See what Meetup organizers are planning in cities around the country.</p>
@@ -429,11 +423,7 @@
         </div>
     </section>
 
-
-
-
-
-
+ <!-- Section howMeetUpWorks -->
     <section class="howMeetupWorks">
         <h2>How Meetup works</h2>
         <div class="how-grid">
@@ -459,17 +449,12 @@
         </div>
     </section>
 
-
-
-
-
-
-
+<!-- Section friendshipSection -->
     <section class="friendshipSection">
         <h2>Friendships are made on Meetup</h2>
         <p class="subtitle">Since 2002, members have used Meetup to make new friends, 
-            meet like-minded people, spend time on hobbies, 
-            and connect with locals over shared interests. <a href="#">Learn how.</a></p>
+            meet like-minded people, spend time on hobbies, and<br>
+            connect with locals over shared interests. <a href="#">Learn how.</a></p>
 
         <div class="friendship-grid">
             <div class="friend-card">
@@ -498,6 +483,80 @@
             </div>
         </div>
     </section>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-div">
+            <div class="footer-start">
+                <p>Create your own Meetup group.</p>
+                <button>Get Started</button>
+            </div>
+            <hr class="footer-line">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Your Account</h4>
+                    <ul>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Log in</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Discover</h4>
+                    <ul>
+                        <li><a href="#">Groups</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Topics</a></li>
+                        <li><a href="#">Cities</a></li>
+                        <li><a href="#">Online Events</a></li>
+                        <li><a href="#">Local Guides</a></li>
+                        <li><a href="#">Make Friends</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Meetup</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Meetup Pro</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Apps</a></li>
+                        <li><a href="#">Podcast</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div class="footer-bottom">
+            <div class="follow-div">
+            <p>Follow us</p>
+            <div class="social-icons">
+                <a href="#"><img src="img/Vector(8).png" alt="Facebook" /></a>
+                <a href="#"><img src="img/Vector(9).png" alt="Twitter" /></a>
+                <a href="#"><img src="img/Vector(10).png" alt="YouTube" /></a>
+                <a href="#"><img src="img/Vector(11).png" alt="Instagram" /></a>
+                <a href="#"><img src="img/Vector(12).png" alt="TikTok" /></a>
+            </div>
+            </div>
+            <div class="app-links">
+                <img src="img/Link - Download app from Google Play → download_en-US.svg.png" alt="Google Play">
+                <img src="img/download_en-US.svg fill.png" alt="App Store">
+            </div>
+            </div>
+
+            <div class="footer-end">
+                <img src="img/© 2024 Meetup.png" alt="Meetup"/>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Do Not Sell or Share My Personal Data</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+         </div>   
+    </footer>
         
         <script src="scripts/script.js"></script>
     </body>

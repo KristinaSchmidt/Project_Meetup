@@ -1,3 +1,19 @@
+const resultsSection = document.querySelector("#event-results");
+const typeSelect = document.querySelector("#type-select");
+const distanceSelect = document.querySelector("#distance-select");
+const categorySelect = document.querySelector("#category-select");
+const daySelect = document.querySelector("#day-select");
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const joinBtn = document.getElementById("join-meetup-btn");
+  if (joinBtn) {
+    joinBtn.addEventListener("click", function () {
+      window.location.href = "events.html";
+    });
+  }
+});
+
 const eventsStore = [
   {
     title: "INFJ Personality Type - Coffee Shop Meet & Greet",
@@ -65,3 +81,65 @@ const eventsStore = [
     distance: 15,
   },
 ];
+
+
+function renderEvents(events) {
+      resultsSection.innerHTML = '';
+      if (events.length === 0) {
+        resultsSection.innerHTML = "<p>No events found.</p>";
+        return;
+      }
+
+      events.forEach(event => {
+        const div = document.createElement("div");
+        div.className = "event-item";
+
+        const options = {
+          weekday: 'short',
+          month: 'short',
+          day: 'numeric',
+          hour: 'numeric',
+          minute: '2-digit',
+          hour12: true,
+          timeZone: 'UTC',
+        };
+        const formattedDate = event.date.toLocaleString('en-US', options).toUpperCase().replace(',', '');
+
+        div.innerHTML = `
+          <div class="event-card">
+            <img src="${event.image}" alt="${event.title}" class="event-img" />
+            <div class="event-details">
+              <p class="event-date">${formattedDate} UTC</p>
+              <h3 class="event-title">${event.title}</h3>
+              <p class="event-meta">${event.category} (${event.distance} km)</p>
+              ${event.attendees ? `<p class="event-attendees">${event.attendees} attendees</p>` : ''}
+            </div>
+          </div>
+        `;
+        resultsSection.appendChild(div);
+      });
+    }
+
+    function filterEvents() {
+      const selectedType = typeSelect.value;
+      const selectedDistance = distanceSelect.value;
+      const selectedCategory = categorySelect.value;
+      const selectedDay = daySelect.value;
+
+      const filtered = eventsStore.filter(event => {
+        const matchType = selectedType === 'any' || event.type === selectedType;
+        const matchDistance = selectedDistance === 'any' || event.distance <= parseInt(selectedDistance);
+        const matchCategory = selectedCategory === 'any' || event.category === selectedCategory;
+        const matchDay = selectedDay === 'any' || event.date.toISOString().slice(0, 10) === selectedDay;
+        return matchType && matchDistance && matchCategory && matchDay;
+      });
+
+      renderEvents(filtered);
+    }
+
+    typeSelect.addEventListener("change", filterEvents);
+    distanceSelect.addEventListener("change", filterEvents);
+    categorySelect.addEventListener("change", filterEvents);
+    daySelect.addEventListener("change", filterEvents);
+
+    renderEvents(eventsStore);
