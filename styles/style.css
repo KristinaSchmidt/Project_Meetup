@@ -861,7 +861,8 @@ section > h2 {
 .event-title {
   font-size: 16px;
   margin: 4px 0;
-  font-weight: 500;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .event-meta {
@@ -872,7 +873,7 @@ section > h2 {
 .event-attendees {
   font-size: 13px;
   color: #777;
-  margin-top: 4px;
+  margin-top: 30px;
 }
 
 .event-date {
@@ -880,6 +881,35 @@ section > h2 {
   color: #888;
   text-transform: uppercase;
 }
+
+.event-item {
+  margin-bottom: 24px;
+}
+
+.event-card {
+  padding-top: 16px;
+  margin-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px; 
+  max-width: 75%;
+}
+
+.event-card .event-img {
+  flex-shrink: 0;
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.event-card .event-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 
 
