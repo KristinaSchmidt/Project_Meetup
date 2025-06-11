@@ -427,6 +427,7 @@ section > h2 {
 
 .city p {
   margin-top: 8px;
+  font-weight: bold;
 }
 
 
@@ -791,7 +792,6 @@ section > h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #00798a;
   color: white;
   padding: 10px 16px;
   border: none;
@@ -845,16 +845,6 @@ section > h2 {
   border: 1px solid #ccc;
   background-color: #f7f7f7;
   font-size: 14px;
-}
-
-.event-item {
-  border-top: 1px solid #eee;
-  padding: 16px 0;
-}
-
-.event-card {
-  display: flex;
-  gap: 16px;
 }
 
 .event-img {
@@ -1337,5 +1327,100 @@ section > h2 {
   .imgDiv img {
     width: 80%;
     height: auto;
+  }
+  .footer {
+    padding: 24px 12px 16px;
+  }
+
+  .footer-div {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .footer-start {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .footer-start button {
+    align-self: flex-end;
+  }
+
+  .footer-line {
+    margin-bottom: 24px;
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .footer-column {
+    flex: 1;
+    min-width: 0;
+    padding: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .social-icons {
+    justify-content: flex-start;
+  }
+
+  .footer-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .footer-end ul {
+    display: none;
+  }
+
+  .footer-end > img {
+    margin-top: auto;
+  }
+
+  .friendshipSection {
+    max-width: 100%;
+    padding: 0 16px;
+    margin-bottom: 60px;
+  }
+
+  .friendship-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .friend-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .friend-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 12px;
+  }
+
+  .friend-card h3,
+  .friend-card p {
+    width: 100%;
+  }
+
+  .friend-card a {
+    margin-top: auto;
+    margin-bottom: 8px;
   }
 }
