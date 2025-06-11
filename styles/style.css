@@ -755,11 +755,13 @@ section > h2 {
 
 .search-bar-section {
   flex: 2;
+  
 }
 
 .map-sidebar {
   flex: 1;
   margin-top: 52px;
+  margin-left: 100px;
 }
 
 .map-label {
@@ -893,7 +895,7 @@ section > h2 {
   display: flex;
   align-items: flex-start;
   gap: 16px; 
-  max-width: 75%;
+  max-width: 100%
 }
 
 .event-card .event-img {
@@ -1319,6 +1321,10 @@ section > h2 {
 
   .map-sidebar {
     display: none;
+  }
+
+  .event-card .event-details {
+    width: 100%;
   }
 }
 
